@@ -4,86 +4,92 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Promptly Speaking - AI Education Made Simple</title>
-    <meta name="description" content="Making AI practical, approachable, and actionable for real people across work, home, and side hustles.">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Header -->
-    <header class="header">
-        <div class="container">
-            <div class="nav">
-                <div class="logo">
-                    <h1>Promptly Speaking</h1>
-                    <p class="tagline">AI that talks like you do</p>
-                </div>
-                <nav class="nav-links">
-                    <a href="#about">About</a>
-                    <a href="#newsletter">Newsletter</a>
-                    <a href="#contact">Contact</a>
-                </nav>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <h1>Promptly Speaking</h1>
+                <p class="tagline">AI that talks like you do</p>
+            </div>
+            <div class="nav-links">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#newsletter" class="nav-link">Newsletter</a>
+                <a href="#contact" class="nav-link">Contact</a>
             </div>
         </div>
-    </header>
+    </nav>
 
-    <!-- Hero Section -->
     <section class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1 class="hero-title">Making AI Practical for Real People</h1>
-                <p class="hero-subtitle">Demystifying AI and empowering everyday people - parents, professionals, students, and entrepreneurs - to use AI tools to save time, work smarter, and unlock growth.</p>
-                
-                <!-- Newsletter Signup -->
-                <div class="newsletter-signup">
-                    <h3>Join Our Community</h3>
-                    <form class="signup-form" action="#" method="post">
-                        <input type="email" placeholder="Enter your email address" required>
-                        <button type="submit">Subscribe</button>
-                    </form>
-                    <p class="signup-note">Get weekly AI insights, tool reviews, and practical prompts delivered to your inbox.</p>
+        <div class="hero-content">
+            <h1 class="hero-title">Making AI Practical for Real People</h1>
+            <p class="hero-description">
+                Demystifying AI and empowering everyday people - parents, professionals, 
+                students, and entrepreneurs - to use AI tools to save time, work smarter, and unlock growth.
+            </p>
+            
+            <div class="newsletter-signup" id="newsletter">
+                <h3>Join Our Community</h3>
+                <div class="signup-form">
+                    <input type="email" id="emailInput" placeholder="Enter your email address" required>
+                    <button id="subscribeBtn" onclick="handleSubscribe()">Subscribe</button>
                 </div>
+                <p class="signup-description">Get weekly AI insights, tool reviews, and practical prompts delivered to your inbox.</p>
             </div>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
+    <section class="mission" id="about">
         <div class="container">
             <h2>Our Mission</h2>
             <p>Promptly Speaking exists to demystify AI and empower everyday people to use AI tools effectively. We believe AI should be accessible, practical, and genuinely helpful in your daily life.</p>
             
-            <div class="content-types">
+            <div class="content-grid">
                 <div class="content-card">
-                    <h3>📺 Weekly Podcast</h3>
+                    <div class="card-icon">
+                        <img src="Podcast2.png" alt="Weekly Podcast" class="feature-image">
+                    </div>
+                    <h3>Weekly Podcast</h3>
                     <p>12-30 minute episodes covering trending AI topics, tool reviews, and practical applications.</p>
                 </div>
+                
                 <div class="content-card">
-                    <h3>🎬 YouTube Shorts</h3>
+                    <div class="card-icon">
+                        <img src="Youtube2.png" alt="YouTube Shorts" class="feature-image">
+                    </div>
+                    <h3>YouTube Shorts</h3>
                     <p>Quick tool demos and prompt tutorials to help you get started with AI immediately.</p>
                 </div>
+                
                 <div class="content-card">
-                    <h3>📧 Newsletter</h3>
+                    <div class="card-icon">
+                        <img src="newsletter2.png" alt="Newsletter" class="feature-image">
+                    </div>
+                    <h3>Newsletter</h3>
                     <p>Weekly digest with 1 news item, 1 tool review, and 1 actionable prompt you can use today.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Spin-off Brands -->
-    <section class="spinoffs">
+    <section class="spin-offs">
         <div class="container">
             <h2>Coming Soon: Specialized Content</h2>
-            <div class="spinoff-grid">
-                <div class="spinoff-card">
+            <div class="spin-off-grid">
+                <div class="spin-off-card">
                     <h3>JustAddAI</h3>
                     <p>Short-form demos, AI tool explainers, and prompt tutorials for quick wins.</p>
                     <span class="coming-soon">Coming Soon</span>
                 </div>
-                <div class="spinoff-card">
+                
+                <div class="spin-off-card">
                     <h3>OpsPlusAI</h3>
                     <p>AI use cases in operations and supply chain for B2B professionals and consultants.</p>
                     <span class="coming-soon">Coming Soon</span>
                 </div>
-                <div class="spinoff-card">
+                
+                <div class="spin-off-card">
                     <h3>AI for Humans</h3>
                     <p>Coaching, group workshops, and toolkits designed for non-technical users.</p>
                     <span class="coming-soon">Coming Soon</span>
@@ -92,24 +98,36 @@
         </div>
     </section>
 
-    <!-- Social Links -->
-    <section class="social">
+    <footer class="footer" id="contact">
         <div class="container">
             <h2>Connect With Us</h2>
             <div class="social-links">
-                <a href="#" class="social-link">YouTube</a>
-                <a href="#" class="social-link">LinkedIn</a>
-                <a href="#" class="social-link">Twitter</a>
-                <a href="#" class="social-link">TikTok</a>
-                <a href="#" class="social-link">Instagram</a>
+                <a href="https://youtube.com/@promptlyspeaking" target="_blank" class="social-link" aria-label="YouTube">
+                    <span class="social-icon">📺</span>
+                    <span>YouTube</span>
+                </a>
+                <a href="https://linkedin.com/company/promptly-speaking" target="_blank" class="social-link" aria-label="LinkedIn">
+                    <span class="social-icon">💼</span>
+                    <span>LinkedIn</span>
+                </a>
+                <a href="https://twitter.com/promptlyspeaking" target="_blank" class="social-link" aria-label="Twitter">
+                    <span class="social-icon">🐦</span>
+                    <span>Twitter</span>
+                </a>
+                <a href="https://tiktok.com/@promptlyspeaking" target="_blank" class="social-link" aria-label="TikTok">
+                    <span class="social-icon">🎵</span>
+                    <span>TikTok</span>
+                </a>
+                <a href="https://instagram.com/promptlyspeaking" target="_blank" class="social-link" aria-label="Instagram">
+                    <span class="social-icon">📸</span>
+                    <span>Instagram</span>
+                </a>
             </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2025 Promptly Speaking. Making AI practical and approachable for everyone.</p>
+            
+            <div class="footer-content">
+                <p>&copy; 2025 Promptly Speaking. Making AI practical for real people.</p>
+                <p>Contact: <a href="mailto:hello@promptlyspeaking.ai">hello@promptlyspeaking.ai</a></p>
+            </div>
         </div>
     </footer>
 
